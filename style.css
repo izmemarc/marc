@@ -742,8 +742,15 @@ body, html {
   width: 100%;
   margin: 0;
   padding: 0;
-  background-color: #1F1F3C;
   overflow: hidden;
+}
+
+body {
+    height: 100vh; /* Full height of the viewport */
+    background-color: var(--wall);
+  background-image: repeating-linear-gradient( to right, #aaa, #aaa 3vh, #bbb 3vh, #bbb 6vh);
+  background-blend-mode: multiply;
+  --wall: #1E1E3C;
 }
 
 *, *:before, *:after {
